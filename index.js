@@ -17,8 +17,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'instlation',
-        message: 'what are your instalation instructions'
+        name: 'installation',
+        message: 'what are your installation instructions'
     },
     {
         type: 'input',
@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'input',
         name: 'contributions',
-        message: "what are the contribuations guidlines"
+        message: "what are the contributions guidelines"
     },
     {
         type: 'input',
@@ -45,7 +45,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'unsername',
+        name: 'username',
         message: "What is your github username?"
     },
     {
@@ -66,8 +66,12 @@ function init() {
     // prompts,
     inquirer.prompt(questions)
     // store response,
-    
-    // readme generated,
+    .then((answers)=>{
+        console.log("readme.md has been generated")
+         // readme generated,
+         writeToFile('readme.md', generateMarkdown(answers))
+    })
+   
 }
 
 // Function call to initialize app
