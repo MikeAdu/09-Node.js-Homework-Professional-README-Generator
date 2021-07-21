@@ -39,9 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: "What license does your project use",
-        choices:["MIT", "Apache", "GPLv3", "None"
-
-        ],
+        choices: ["MIT", "Apache", "GPLv3", "None"],
     },
     {
         type: 'input',
@@ -62,16 +60,16 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() { 
+function init() {
     // prompts,
     inquirer.prompt(questions)
-    // store response,
-    .then((answers)=>{
-        console.log("readme.md has been generated")
-         // readme generated,
-         writeToFile('readme.md', generateMarkdown(answers))
-    })
-   
+        // store response,
+        .then((answers) => {
+            console.log("readme.md has been generated")
+            // readme generated,
+            writeToFile('readme.md', generateMarkdown(answers))
+        })
+
 }
 
 // Function call to initialize app
