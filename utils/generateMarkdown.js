@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license !== "none") {
     return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
-  return "";
+  return ""; 
 }
 
 // TODO: Create a function that returns the license link
@@ -29,13 +29,14 @@ ${license}`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseBadge (data.license)}
 ## Table of Contents 
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributions](#Contributions)
 * [Test](#Test)
-* [License](#License)
+${renderLicenseLink (data.license)}
 * [Username](#Username)
 * [Email](#Email)
 
@@ -54,6 +55,7 @@ ${renderLicenseSection (data.license)}
 ${data.username}
 ## Email
 ${data.email}
+
 `;
 }
 
