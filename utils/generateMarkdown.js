@@ -31,14 +31,14 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge (data.license)}
 ## Table of Contents 
-* [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Contributions](#Contributions)
-* [Test](#Test)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Test](#test)
 ${renderLicenseLink (data.license)}
-* [Username](#Username)
-* [Email](#Email)
+* [Username](#username)
+* [Email](#email)
 
 ## Description
 ${data.description}

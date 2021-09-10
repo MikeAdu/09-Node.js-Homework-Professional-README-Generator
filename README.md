@@ -1,31 +1,31 @@
-# readme 
+# readme.md 
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Table of Contents 
-* [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Contributions](#Contributions)
-* [Test](#Test)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Test](#test)
 
 * [License](#license)
 
-* [Username](#Username)
-* [Email](#Email)
+* [Username](#username)
+* [Email](#email)
 
 ## Description
-readme 
+it was to create a good readme.md genarater
 ## Installation 
-readme 
+install node.js and inqurier 
 ## Usage 
-readme
+n/a
 ## Contributions
-readme
+n/a
 ## Test 
-readme
+run  node index.js from command line 
 ## License
 MIT 
 ## Username
-mikeadu
+Mkadu
 ## Email
 mike_adusah@yahoo.com
 
